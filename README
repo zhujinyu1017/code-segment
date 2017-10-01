@@ -1,6 +1,12 @@
-+静态地图：
- ++staticmap.html
- ++markersMap.html
- ++效果图
-![text](https://raw.githubusercontent.com/zhujinyu1017/code-segment/master/map/markers/staticmap.png)
-
+大标题  
+===================================  
+  大标题一般显示工程名,类似html的\<h1\><br />  
+  你只要在标题下面跟上=====即可  
+  
+###只是显示图片  
+![github](http://github.com/unicorn.png "github")  
+  
+###想点击某个图片进入一个网页,比如我想点击github的icorn然后再进入www.github.com  
+[![image]](http://www.github.com/)  
+[image]: http://github.com/github.png "github"  
+  
