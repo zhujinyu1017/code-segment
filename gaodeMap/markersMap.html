@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="map_1" style="width: 100%;height: 200px;"></div>
-<script src="../js/zepto.js"></script>
+<script src="../js/lib/zepto.js"></script>
 <script src="../js/gaodeMap.js"></script>
 <script type="text/javascript">
     var markers = [{
@@ -24,7 +24,7 @@
         icon: 'http://webapi.amap.com/theme/v1.3/markers/n/mark_b3.png',
         position: [116.305467, 39.807761]
     }];
-   var sss= module.markersMap("map_1",markers);
+   module.markersMap("map_1",markers);
 </script>
 </body>
 </html>
