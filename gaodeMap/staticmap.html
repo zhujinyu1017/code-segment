@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>多点标注题图</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=c8d499635271ab4f9d449d35911e2cf1"></script>
+</head>
+<body>
+<img src="" alt="" id="map_1">
+<img src="" alt="" id="map_2">
+<img src="" alt="" id="map_3">
+<script src="../js/zepto.js"></script>
+<script src="../js/gaodeMap.js"></script>
+<script type="text/javascript">
+    var params_1={
+        size:'350*180',
+        scale:1,
+        markers:'mid,0xFF0000,A:116.581333,39.911018;116.585324,39.91059|mid,0x999999,我:116.576999,39.909438;116.577685,39.908351|large,0x008000,0:116.584122,39.912137|small,0xFF0000,A:116.573866,39.905882|-1,https://s5.lairen.com/img/address/address-icon.png,0:116.589916,39.907989',
+        key:'a04bafcc79a99fd5f43ca0731832b04c'
+    };
+    var src_1=module.staticmap_markers(params_1);
+    var map_1=$("#map_1");
+    map_1.attr('src',src_1);
+    var params_2={
+        size:'350*180',
+        scale:1,
+        labels:'张三的位置,0,0,12,0xffffff,0xff0000:116.581333,39.911018|李四的位置,0,0,12,0xffffff,0xff0055:116.585324,39.91059',
+        key:'a04bafcc79a99fd5f43ca0731832b04c'
+    };
+    var src_2=module.staticmap_markers(params_2);
+    var map_2=$("#map_2");
+    map_2.attr('src',src_2);
+    var params_3={
+        size:'350*180',
+        scale:1,
+        paths:'2,0x1decea,0.6,0x0000FF,0.8:116.581333,39.911018;116.585324,39.91059;116.589916,39.907989',
+        key:'a04bafcc79a99fd5f43ca0731832b04c'
+    };
+    var src_3=module.staticmap_markers(params_3);
+    var map_3=$("#map_3");
+    map_3.attr('src',src_3);
+</script>
+</body>
+</html>

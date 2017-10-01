@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>多点标注题图</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script type="text/javascript"
+            src="http://webapi.amap.com/maps?v=1.3&key=c8d499635271ab4f9d449d35911e2cf1"></script>
+</head>
+<body>
+<div id="map_1" style="width: 100%;height: 200px;"></div>
+<script src="../js/zepto.js"></script>
+<script src="../js/gaodeMap.js"></script>
+<script type="text/javascript">
+    var markers = [{
+        icon: 'http://webapi.amap.com/theme/v1.3/markers/n/mark_b1.png',
+        position: [116.205467, 39.907761]
+    }, {
+        icon: 'http://webapi.amap.com/theme/v1.3/markers/n/mark_b2.png',
+        position: [116.368904, 39.913423]
+    }, {
+        icon: 'http://webapi.amap.com/theme/v1.3/markers/n/mark_b3.png',
+        position: [116.305467, 39.807761]
+    }];
+   var sss= module.markersMap("map_1",markers);
+</script>
+</body>
+</html>
