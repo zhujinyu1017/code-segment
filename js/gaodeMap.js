@@ -2,7 +2,6 @@
  * Created by zhujinyu on 2017/9/29.
  */
 var module = new Object({
-    _count : 0,
     /*
     *
     * **/
