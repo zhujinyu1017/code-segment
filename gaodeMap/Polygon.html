@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>编辑折线、多边形、圆</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script src="http://webapi.amap.com/maps?v=1.4.0&key=c8d499635271ab4f9d449d35911e2cf1&plugin=AMap.PolyEditor,AMap.CircleEditor"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+</head>
+<body>
+<div id="container"></div>
+<script>
+    var map = new AMap.Map("container", {
+        resizeEnable: true,
+        center: [116.403322, 39.900255],//地图中心点
+        zoom: 13 //地图显示的缩放级别
+    });
+    var arr = [ //构建多边形经纬度坐标数组
+        [116.403322,39.920255],
+        [116.410703,39.897555],
+        [116.402292,39.892353],
+        [116.389846,39.891365]
+    ]
+    var arr1 = [ //构建多边形经纬度坐标数组
+        [116.368904, 39.913423],
+        [116.382122, 39.901176],
+        [116.387271, 39.912501],
+    ]
+    //绘制多边形
+    var Polygon1=new AMap.Polygon({
+        map:map,
+        zIndex:1,
+        path:arr,
+        bubble:false,
+        strokeColor: "#0000ff",
+        strokeOpacity: 1,
+        strokeWeight: 3,
+        fillColor: "#f5deb3",
+        fillOpacity: 0.35
+    });
+    var Polygon2=new AMap.Polygon({
+        map:map,
+        zIndex:1,
+        path:arr1,
+        bubble:false,
+        strokeColor: "#0000ff",
+        strokeOpacity: 1,
+        strokeWeight: 3,
+        fillColor: "#ff0000",
+        fillOpacity: 0.35
+    });
+    Polygon1.on('click',function () {
+        Polygon1.setOptions({
+            fillColor: "#000",
+            fillOpacity: 1
+        })
+    })
+    Polygon2.on('click',function () {
+        Polygon2.setOptions({
+            fillColor: "#d57310",
+            fillOpacity: 1
+        })
+    })
+</script>
+</body>
+</html>
