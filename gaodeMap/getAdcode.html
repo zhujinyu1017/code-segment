@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>编辑折线、多边形、圆</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script src="http://webapi.amap.com/maps?v=1.4.0&key=c8d499635271ab4f9d449d35911e2cf1&plugin=AMap.CitySearch"></script>
+</head>
+<body>
+<div id="container"></div>
+<script>
+    var citysearch = new AMap.CitySearch();
+    citysearch.getLocalCity(function(status, result) {
+        console.log(result)
+        console.log(result.adcode)
+    })
+</script>
+</body>
+</html>

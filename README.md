@@ -9,3 +9,7 @@
 多边形设置 点击修改填充颜色 gaodeMap/Polygon.html<br> 
 效果图如下：<br>  
 ![图2](https://github.com/zhujinyu1017/code-segment/blob/master/map/markers/polygon.png?raw=true)
+<br>  
+自动定位获取城市的adcode gaodeMap/getAdcode.html<br> 
+效果图如下：<br>  
+![图2](https://github.com/zhujinyu1017/code-segment/blob/master/map/markers/getadcode.png?raw=true)
