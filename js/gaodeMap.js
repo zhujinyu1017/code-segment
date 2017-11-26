@@ -8,8 +8,8 @@ var module = new Object({
     markersMap : function (mapId,markers){
         var map = new AMap.Map(mapId, {
             resizeEnable: true,
-            // center: location,
-            // zoom: 13
+            center: location,
+            zoom: 13
         });
         map.clearMap();  // 清除地图覆盖物
         markers.forEach(function(marker) {

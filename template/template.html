@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="list">
+
+</ul>
+<script>
+    var tpl = '<li>{{name}}</li>';
+    var data = [
+        {name:"第一行"},
+        {name:"第二行"},
+        {name:"第三行"},
+        {name:"第四行"},
+        {name:"第五行"},
+    ];
+    var result = tplEngine(tpl, data);
+    function tplEngine(tpl, data) {
+        var tmpl = [];
+        for(var i in data){
+            with (data[i]){
+                var result = tpl.replace(/\{{(\S)+}}/g, name);
+                tmpl+=result;
+            }
+        }
+        return tmpl;
+    }
+    document.getElementById("list").innerHTML=result;
+</script>
+</body>
+</html>
+</body>
+</html>
