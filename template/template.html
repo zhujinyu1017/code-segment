@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
-<body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+            width: 50%;
+            margin: 10px;
+        }
+        li:nth-child(2n){
+            background: #e3ff78;
+        }
+        li:nth-child(2n+1){
+            background: #ff8f1d;
+        }
+    </style>
 </head>
 <body>
 <ul id="list">
@@ -37,7 +47,5 @@
     }
     document.getElementById("list").innerHTML=result;
 </script>
-</body>
-</html>
 </body>
 </html>
